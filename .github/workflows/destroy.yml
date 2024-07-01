@@ -3,7 +3,7 @@ name: Destroy Resources
 on:
   workflow_dispatch: # Allows you to run the workflow manually
   schedule:
-    - cron: '0 14 * * 1-5' # Runs at 5 PM UTC, Monday to Friday
+    - cron: '0 14 * * 0-4' # Runs at 2 PM UTC, Sunday to Thursday
 
 jobs:
   destroy:
